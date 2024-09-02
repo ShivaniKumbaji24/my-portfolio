@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivani - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Shivani Kumbaji
+          <div class="contact_info">
+            <img src="./html_projimages/gmail.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          shivani.kumbaji2004@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="./html_projimages/contact.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +917671029899
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#about-me">Skills</a>
+          <a class="topmenu" href="#about-me">Projects</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+        
+      <div>
+        <img src="./html_projimages/shivani.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Shivani Kumbaji <img src="./html_projimages/hand.jpeg" width="60px"/>
+          </h1>
+          <p>
+            I am Shivani, a student and web developer with experience in building applications. I’m skilled in both frontend and backend technologies, and I’m passionate about expanding my expertise further.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="./html_projimages/html.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="./html_projimages/javascript.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="./html_projimages/css.png"/>
+            <h6>Css</h6>
+            <p>3 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="./html_projimages/java.png"/>
+            <h6>Java</h6>
+            <p>3 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="./html_projimages/nodejs.png"/>
+            <h6>node.js</h6>
+            <p>3 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="./html_projimages/react.jpeg"/>
+            <h6>React</h6>
+            <p>3 years experience</p>
+          </div>
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Responsive Sliding Login and Registration Forms</h3>
+            <ul>
+              <li> A Responsive sliding login and registration form using HTML, CSS, and JavaScript.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Hospital Management System</h3>
+            <ul>
+              <li>the Software that helps in managing the functioning of the hospital or a health unit</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fashion Website</h3>
+            <ul>
+              <li>A Collection of tasks that outlines the work a project manager or team plans to complete during a project.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Shivani is a quick learner with a great attitude and strong teamwork skills. She asks insightful questions, takes initiative, and has the potential to lead teams effectively. Highly recommended!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Shivani is a skilled web developer, rapidly learning and applying new technologies. She collaborates effectively, asks smart questions, takes initiative, and shows strong potential for leadership. A valuable team member.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I highly recommend Shivani as a web developer. She quickly learns new technologies, collaborates seamlessly, asks insightful questions, and takes initiative. Her leadership potential makes her an asset to any team. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="./checkmark-outline-svgrepo-com.svg"/>
+      <h3><!-- Add appropriate text here-->
+        Thanks for leaving recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+    
+  </body>
+</html>
